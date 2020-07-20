@@ -9,7 +9,7 @@ public class CsvReader {
     public static final char DOUBLE_QUOTE = '"';
     public static final char DOUBLE_QUOTE_BACK = '\"';
     public static final char CSV_SEPARATOR = ',';
-    
+
     public static List<String> readLine(String line) {
         return readLine(line, CSV_SEPARATOR, DOUBLE_QUOTE);
     }
