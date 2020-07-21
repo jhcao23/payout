@@ -1,5 +1,7 @@
 package technology.touchmars.api;
 
+import technology.touchmars.api.pojo.ApiPayoutRequest;
+import technology.touchmars.api.pojo.ApiPayoutResponse;
 import technology.touchmars.repository.ServiceBean;
 import technology.touchmars.model.SimpleProperty;
 
@@ -12,6 +14,18 @@ import java.util.List;
 
 @Path("/service")
 public class RestSample {
+
+	@POST
+	@Path("/payout")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public ApiPayoutResponse acceptPayoutRequestApi(ApiPayoutRequest apiPayoutRequest){
+		return new ApiPayoutResponse();
+	}
+
+	/**
+	 * below is playground
+	 */
 
 	@Inject
 	ServiceBean ejb;
