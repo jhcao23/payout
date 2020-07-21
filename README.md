@@ -12,6 +12,7 @@ Demo Payout System Draft
 - JSF 2
     - [FileUpload Backing Bean](src/main/java/technology/touchmars/jsf/FileUploadBean.java)
     - [validator](src/main/java/technology/touchmars/validator)
+    - [xhtml pages](src/main/webapp/faces)
 - [config](src/main/java/technology/touchmars/config)  
 - [Core Java Utils](src/main/java/technology/touchmars/util) 
     - [CsvReader](src/main/java/technology/touchmars/util/CsvReader.java)
