@@ -27,6 +27,6 @@ Demo Payout System Draft
 
 ### Note
 - It only demonstrates the idea how a Payout system prototype works with tech stack (JSF 2, JPA 2, Service Layer, etc). 
-- UI part needs more work as time runs out.
+- UI and backend need more work as time runs out.
 - need to download [wildfly](https://www.wildfly.org/downloads/) version `20+` to run it
 - run the demo command `$WILDFLY_HOME/bin/standalone.sh && mvn clean install wildfly:deploy`
