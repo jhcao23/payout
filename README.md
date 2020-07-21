@@ -1,8 +1,8 @@
 Demo Payout System Draft
 ===============================
-### A sample and tiny project to demo the idea how to do payout 
+### A tiny demo to show an idea how a payout system utilizes the tech stack 
 
-## High Level Design Overview
+## High Level Design Overview - zoom in this HD svg picture
 ![Overview](overview.svg)
 
 ### tech knowledge outline
