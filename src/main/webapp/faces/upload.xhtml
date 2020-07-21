@@ -22,7 +22,7 @@
 <!--                <f:ajax execute="@this" render="@form"/>-->
             </h:inputFile>
             <h:message for="file"/>
-            <h:commandButton value="Upload" action="#{fileUploadBean.upload()}">
+            <h:commandButton value="Upload" action="#{fileUploadBean.upload}">
 <!--                <f:ajax execute="@this" render="@form"/>-->
             </h:commandButton>
             <h:outputText value="#{fileUploadBean.file.submittedFileName}" />

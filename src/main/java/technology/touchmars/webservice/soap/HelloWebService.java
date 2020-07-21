@@ -2,26 +2,13 @@ package technology.touchmars.webservice.soap;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-import java.math.BigDecimal;
+import javax.jws.soap.SOAPBinding;
+import static javax.jws.soap.SOAPBinding.Style.RPC;
 
 @WebService
-public class HelloWebService {
-    private String message = new String("Hello, ");
-
-    public void Hello() {}
+@SOAPBinding(style= RPC)
+public interface HelloWebService {
 
     @WebMethod
-    public String sayHello(String name) {
-        return message + name + ".";
-    }
-
-    public static void main(String[] args) {
-        Class c = HelloWebService.class;
-        System.out.println(c.getSimpleName());
-
-        String currency = "100,00";
-        BigDecimal d = new BigDecimal(currency);
-        System.out.println(d.floatValue());
-
-    }
+    public String sayHello(String name);
 }

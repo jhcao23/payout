@@ -19,5 +19,35 @@ public class RecipientId {
     @Column(name = "venmo_id")
     private String venmoId;
 
+    public String getEmail() {
+        return email;
+    }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Mobile getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(Mobile mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getPaypalId() {
+        return paypalId;
+    }
+
+    public void setPaypalId(String paypalId) {
+        this.paypalId = paypalId;
+    }
+
+    public String getVenmoId() {
+        return venmoId;
+    }
+
+    public void setVenmoId(String venmoId) {
+        this.venmoId = venmoId;
+    }
 }

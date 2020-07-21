@@ -7,6 +7,7 @@ import javax.persistence.Entity;
  * currency code should be loaded into cache system such as Redis, when app starts.
  */
 @Entity
+//TODO: maybe currency needs List<Period> to indicate when its disabled or reactivated?
 public class Currency extends HasId {
 
     @Column(length = 3, name = "code", unique = true)

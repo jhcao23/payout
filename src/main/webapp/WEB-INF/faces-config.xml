@@ -6,5 +6,18 @@
         version="2.3"
 >
     <!-- Put any faces config here. -->
-
+    <navigation-rule>
+        <from-view-id>/faces/upload.xhtml</from-view-id>
+        <navigation-case>
+            <from-action>#{fileUploadBean.upload}</from-action>
+            <from-outcome>good</from-outcome>
+            <to-view-id>/faces/review.xhtml</to-view-id>
+            <redirect include-view-params="true">
+                <redirect-param>
+                    <name>reqId</name>
+                    <value>#{fileUploadBean.reqId}</value>
+                </redirect-param>
+            </redirect>
+        </navigation-case>
+    </navigation-rule>
 </faces-config>
